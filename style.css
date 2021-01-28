@@ -14,7 +14,7 @@ html{
    word-wrap: break-word;
    overflow: auto;
    display: grid;
-   height: 120vw;
+   height: 100vw;
    /* min-height: 100vw; */
    /* max-height: 100%; */
 
@@ -28,18 +28,17 @@ html{
 
 h1{
    /* overflow:hidden; */
-   position: absolute;
+   position: sticky;
    font-weight: bold;
    color: #ffef00;
-   /* text-align: left; */
-   top: 5vh;
+margin-right:  1rem;
 
-    left:      55vh;
-   font-size: 40vw;
-   text-shadow: 10px 30px 50px black, 30px 30px 10px black, 30px 30px 10px black,30px 30px 10px black;
+
+   font-size: 25vw;
+   text-shadow: 30px 50px 50px  black, 30px 30px 10px black, 30px 30px 10px black,30px 30px 10px black;
    transform-style: preserve-3d;
-   transform:perspective(600px) rotateY(250deg) rotateX(3620deg) translateZ(2em);
-    letter-spacing: 55px;
+   transform:perspective(850px) rotateY(400deg) rotateX(10deg) translateX(210px);
+    letter-spacing: 5px;
 
    z-index: 1;
 }
@@ -67,7 +66,7 @@ h1{
 .header{
    background: linear-gradient(0deg, rgba(79,184,217,1) 38%, rgba(2,63,84,0.9752275910364145) 67%, rgba(0,0,0,1) 100%, rgba(93,216,255,1) 100%); rgba(93,216,255,1) 100%);
    grid-column: 1/12;
-   grid-row:   1/12;
+   grid-row:  1/12;
 }
 /* .menu{
 
@@ -103,8 +102,8 @@ grid-row: 3/10;
 .content{
 
    display: grid;
-   grid-column: 1/2;
-   grid-row: 1/12;
+   grid-column: 1/12;
+   grid-row: 1/3;
 
 }
 
@@ -128,23 +127,25 @@ grid-row: 3/10;
    /* position: absolute; */
    /* left: 1vw;
    top: 1vh; */
-  position: sticky;
+  position: relative;
 
-   top: 10px;
+   top: 50px;
    border-style: none;
    overflow-y: scroll;
-   max-height: 35vw;
+   max-height: 40vw;
    min-width:  100%;
    background: linear-gradient(90deg, rgba(203,203,203,1) 0%, rgba(227,227,227,1) 20%, rgba(213,213,213,1) 33%, rgba(255,255,255,1) 40%, rgba(0,0,0,1) 50%, rgba(249,249,249,1) 69%, rgba(199,199,199,1) 100%, rgba(213,213,213,1) 100%, rgba(179,179,179,1) 100%);
-   box-shadow: 50px 50px 50px #222222 , 1px 5px #000000;
-   grid-column:9/12;
-   grid-row: 2/2;
+   box-shadow: -50px -50px 50px #222222 , 1px 5px #000000;
+   grid-column: 2/6;
+   grid-row: 2/4;
    transform-style: preserve-3d;
-   transform:perspective(1150px) rotateZ(0deg) rotateY(-390deg) translateZ(110px);
+   transform:perspective(440px) rotateY(10deg) rotateX(-50deg) translateZ(490px);
+
 }
 
 
 .main ul{
+   /* writing-mode: vertical-rl; */
    position: relative;
    max-height:  25vh;
    max-width:  25vw;
